@@ -1,0 +1,28 @@
+body {
+  overflow: hidden;
+}
+
+.container{
+  margin: 0;
+}
+
+.gremlin {
+  position: absolute;
+  width: 50%;
+
+  bottom: -100%;
+
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
