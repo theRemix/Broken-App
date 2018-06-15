@@ -6,13 +6,34 @@ body {
   margin: 0;
 }
 
+.gremlin-peek {
+  position: absolute;
+  width: 15%;
+  transform: rotate(180deg);
+
+  left: 25%;
+  top: -50%;
+
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-name: peek;
+  animation-fill-mode: forwards;
+}
+
+@keyframes peek {
+  0%   { top: -50%; }
+  30%  { top: 0px; }
+  70%  { top: 0px; }
+  100% { top: -50%; }
+}
+
 .gremlin {
   position: absolute;
   width: 50%;
 
-  bottom: -100%;
+  bottom: -50%;
 
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-duration: 3s;
   animation-name: slidein;
   animation-fill-mode: forwards;
@@ -20,7 +41,7 @@ body {
 
 @keyframes slidein {
   from {
-    bottom: -100%;
+    bottom: -50%;
   }
 
   to {
