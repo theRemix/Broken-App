@@ -8,11 +8,11 @@ body {
 
 .gremlin-peek {
   position: absolute;
-  width: 15%;
+  width: 10%;
   transform: rotate(180deg);
 
   left: 25%;
-  top: -50%;
+  top: -100%;
 
   animation-delay: 2s;
   animation-duration: 3s;
@@ -21,17 +21,17 @@ body {
 }
 
 @keyframes peek {
-  0%   { top: -50%; }
+  0%   { top: -100%; }
   30%  { top: 0px; }
   70%  { top: 0px; }
-  100% { top: -50%; }
+  100% { top: -100%; }
 }
 
 .gremlin {
   position: absolute;
-  width: 50%;
+  width: 40%;
 
-  bottom: -50%;
+  bottom: -100%;
 
   animation-delay: 5s;
   animation-duration: 3s;
@@ -41,7 +41,7 @@ body {
 
 @keyframes slidein {
   from {
-    bottom: -50%;
+    bottom: -100%;
   }
 
   to {
